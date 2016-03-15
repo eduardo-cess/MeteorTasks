@@ -1,0 +1,59 @@
+<template name="projeto">
+<!-- 	<div class="container-fluid card">
+		<div class="row">
+			<h3 class="center card-panel blue-grey darken-1 hoverable white-text">Título do Projeto</h3>
+		</div>
+		<div class="row">
+			{{>tasks}}
+		</div>
+		
+	</div> -->
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col l3 s12">	
+				<ul class="collapsible center" data-collapsible="accordion">
+				    <li>
+				      <div class="collapsible-header blue-grey darken-1 white-text"><div><b>Cadastrar Tarefa</b></div></div>
+				     	<div class="collapsible-body">
+					     	<div class="container">
+					     		<form id="cadastroGrupoTarefas">
+						            <div class="input-field">
+						                <input name="nomeGrupo" id="nomeGrupo" type="text" class="validate" required>
+						                <label for="nomeGrupo">Nome</label>
+						                <input name="submit" type="submit" class="btn" value="Add">
+						            </div>
+								</form>
+							</div>
+						</div>
+				    </li>
+				</ul>
+			</div>
+			<div class="col l9">
+				<div class="card container-fluid">
+					<div class="row">
+						<h3 class="center card-panel blue-grey darken-1 hoverable white-text">Título do Projeto</h3>
+					</div>
+					<div class="row">
+						{{>tasks}}
+					</div>
+				</div>		
+			</div>	
+		</div>
+	</div>
+</template>
+
+<template name="tasks">
+	<div class="col l3">
+      	<ul class="collapsible center" data-collapsible="accordion">
+		    <li>
+		      <div class="collapsible-header active">Login</div>
+		     	<div class="collapsible-body">
+			     	teste
+				</div>
+		    </li>
+		</ul>
+    </div>
+    {{>materializeCollapse}}
+</template>

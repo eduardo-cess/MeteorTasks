@@ -1,0 +1,12 @@
+span#cadastro{
+	background-color: #283593;
+}
+
+p{
+	text-align: justify;
+}
+
+#loginButtons{
+	padding: 10px;
+	width: 200px;
+}

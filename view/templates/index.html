@@ -1,0 +1,55 @@
+<template name="home">
+	
+  	<div class='container' id='corpo'>
+
+		<div class="card-panel">
+			<div class="row">
+				<div class="col m6 l8 hide-on-small-only">
+					<h4>myApp</h4>
+					<br>
+					<img class="responsive-img" src="/images.jpeg">
+				</div>
+
+				<div class="col s12 m6 l4">
+					<h5 class="center">Cadastre-se</h5>
+					<form id="cadastroUsuario">
+			            <div class="input-field">
+			                  <input name="email" id="email" type="email" class="validate" required>
+			                  <label for="email">Email</label>
+			            </div>
+			            <div class="input-field">
+			                  <input name="senha" id="senha" type="password" class="validate" required>
+			                  <label for="senha">Senha</label>
+			            </div>
+			            <input name="submit" type="submit" class="btn center" value="Cadastrar-se">
+					</form>
+					<p class="center">Ou</p>
+					<ul class="collapsible center" data-collapsible="accordion">
+					    <li>
+					      <div class="collapsible-header">Login</div>
+					     	<div class="collapsible-body">
+						     	<div class="container">
+						     		<form id="loginUsuario">
+ 							            <div class="input-field">
+ 							                  <input name="emailLogin" id="emailLogin" type="email" class="validate" required>
+ 							                  <label for="emailLogin">Email</label>
+ 							            </div>
+ 							            <div class="input-field">
+ 							                  <input name="senhaLogin" id="senhaLogin" type="password" class="validate" required>
+ 							                  <label for="senhaLogin">Senha</label>
+ 							            </div>
+ 							            <input name="submit" type="submit" class="btn center-align" value="Login" id="submit">
+ 									</form>
+ 								</div>
+							</div>
+					    </li>
+					</ul>
+
+				</div>		
+			</div>
+		</div>
+	</div>
+
+	{{>materializeCollapse}}
+
+</template>
