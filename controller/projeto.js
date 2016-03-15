@@ -5,7 +5,6 @@ if (Meteor.isClient) {
 	// 		return Session.get('idProjeto');
 	// 	}
 	// });
-	alert(window.location.href);
 
 }
 
