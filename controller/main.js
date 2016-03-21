@@ -13,7 +13,7 @@ if (Meteor.isClient) {
         event.preventDefault();
         email = template.find('#email').value;
         senha = template.find('#senha').value;
-      
+
         Accounts.createUser({
             email: email,
             password: senha
@@ -30,12 +30,11 @@ if (Meteor.isClient) {
         email = template.find('#emailLogin').value;
         senha = template.find('#senhaLogin').value;
         Meteor.loginWithPassword(email,senha,function(error){
-          if (error)
-            Materialize.toast("Usuário "+email+" não possui cadastro.", 4000);         
-          else
-            Router.go('inicio');
+              if (error)
+                Materialize.toast("Usuário "+email+" não possui cadastro.", 4000);         
+              else
+                Router.go('inicio');
         });
-
      }
   });
 
@@ -46,10 +45,4 @@ if (Meteor.isClient) {
     })
   });
 
-}
-
-if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
 }

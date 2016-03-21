@@ -1,10 +1,10 @@
 if (Meteor.isClient) {
 
-	// Template.projeto.helpers({
-	// 	idProjeto: function(){
-	// 		return Session.get('idProjeto');
-	// 	}
-	// });
+	Template.projeto.helpers({
+		projeto: function(){
+			return Session.get('projectName');
+		}
+	});
 
 }
 

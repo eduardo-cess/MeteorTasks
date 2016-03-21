@@ -8,8 +8,11 @@ if (Meteor.isClient) {
 
 }
 
-if (Meteor.isServer) {
-	Meteor.startup(function () {
-    // code to run on server at startup
-  	});
+if (Meteor.isCordova) {
+
+	Template.footer.onRendered(function(){
+		$(".page-footer").addClass('hide-on-small-only');
+	});
+
+
 }
