@@ -3,6 +3,11 @@
 
 	{{>yield}}
 
-	{{>footer}}
+
+	{{#if currentUser}}
+		
+	{{else}}
+		{{>footer}}
+	{{/if}}
 
 </template>
