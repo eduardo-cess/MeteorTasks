@@ -39,7 +39,7 @@ if (Meteor.isClient) {
 
   'click .deleteProject': function(event, template){
     idProjeto = this._id;
-    Meteor.call('removeProject',idProjeto, function (error, result) {if (error) MAterialize.toast("Erro ao excluir",4000)});
+    Meteor.call('removeProject',idProjeto, function (error, result) {if (error) Materialize.toast("Erro ao excluir",4000)});
   },
 
   'click .openProject': function(){
